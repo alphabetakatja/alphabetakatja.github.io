@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Katja Štefan | Portfolio</title>
+    <!--Ion Icons-->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects-section" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills-section" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <section class="hero">
+          <!-- <div class="container"> -->
+            <!-- <div class="main-message"> -->
+
+              <div class="box">
+              <h1>
+                <span
+                  >Katja <br />
+                  Štefan</span
+                >
+                </h1>
+              <div>
+                  <!-- <h3>Portfolio</h3> -->
+
+
+            <!-- </div> -->
+          <!-- </div> -->
+        </section>
+
+
+
+        <section class="about" id="about-section">
+
+            <h1>About</h1>
+                <div class="personal-info">
+
+
+
+                    <p id="about-p">Hello, I'm <strong>Katja</strong> - a Berlin-based junior JavaScript developer with an affinity for design & user experience.</p>
+                    <p id="about-p">Prior to transitioning into web development I was working as a freelance translator & volunteering on different social projects.</p>
+                        <p id="about-p">I spend my free time organizing <a href="http://www.movieactivism.com/" target="_blank">Mov(i)e Activism Film Festival</a>,
+                         an activist documentary film festival that promotes human rights, equity, inclusion & non-discrimination. I like minimalism, brutalist
+                         architecture & enjoy taking analogue photographs. And recently I discovered a passion for programming languages.
+                          </p>
+                        <p id="about-p">As a developer, I value simple content structure, clean design patterns combined with thoughtful animations & transitions to maximize user experience.</p>
+                        <p id="about-portfolio">Explore my portfolio below.</p>
+                    </div>
+        </section>
+        <div class="">
+            <!-- <div class="about-parallax">
+
+                </div> -->
+                <div class="about-parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/ja1.jpg"></div>
+        </div>
+
+        <section class="projects" id="projects-section">
+            <h1>Projects</h1>
+            <div class="social-network">
+                <div class="projects-title">
+
+                    <img id="project-img" src="images/FemmeTor1.jpg" alt="Social Network">
+                    <p id="technologies-red"><a href="https://github.com/alphabetakatja/finalproject" target=_blank>click to see the code on<i id="git-logo" class="icon ion-logo-github"></i></a></p>
+
+                </div>
+                <div class="projects-description">
+                    <h3>FemmeTor</h3>
+                    <p id="projects-p">
+                        A single-page platform for womxn developers built with React,
+                        where users can choose their role (mentor/mentee), find a mentor or a mentee,
+                        request a mentorship, chat and share job offers with each other.</p>
+
+                        <p id="projects-p">
+                            This project was build within 12 days of learning React.js and Redux by doing and coding.
+                            The result represents core features of a social network.
+
+                            For me this was a good opportunity to gather more practical
+                            experience with asychronous JavaScript (using Promises and async/await)
+                            as well as with database queries - and to explore React, a very powerful framework for building single-page applications.
+
+                        </p>
+                        <p id="technologies-red">Technologies: React.js, Redux, socket.io, PostgreSQL, Node.js</p>
+                </div>
+            </div>
+
+
+            </section>
+
+
+<section class="projects" id="projects-section">
+            <div class="social-network">
+                <div class="projects-description">
+                    <h3>Image | Board</h3>
+                    <p id="projects-p">
+                        I've been taking analogue photos for a long time now and I was never really sure what
+                        to do with them. This project is very dear to me because, except from learning Vue.js,
+                        I managed to find a special place to store most of my photos.</br>
+                        This is an Instagram inspired image board where anybody can
+                        upload an analogue picture of their choice and see pictures that others have uploaded.</p>
+
+                        <p id="projects-p">
+                            This application doesn't require registration, but users can add an image along with the title, description and username.
+                            There is a predefined number of pictures shown, more on users request ('see more' button).
+                            Click on a picture opens a modal where anybody can leave a comment.
+                        </p>
+
+                        <p id="technologies-red">Technologies: HTML, CSS, Vue.js, Node.js/Express.js, PostgreSQL, AWS S3</p>
+
+
+                </div>
+                <div class="projects-title">
+
+                    <img id="project-img" src="images/modal.jpg" alt="Social Network">
+                    <p id="technologies-red"><a href="https://github.com/alphabetakatja/imageboard" target=_blank>click to see the code on<i id="git-logo" class="icon ion-logo-github"></i></a></p>
+
+                </div>
+
+            </div>
+
+            </section>
+
+            <section class="projects" id="projects-section">
+
+            <div class="social-network">
+                <div class="projects-title">
+
+                    <img id="project-img" src="images/petition.jpg" alt="Social Network">
+                    <p id="technologies-red"><a href="https://github.com/alphabetakatja/petition" target=_blank>click to see the code on<i id="git-logo" class="icon ion-logo-github"></i></a></p>
+
+                </div>
+                <div class="projects-description">
+                    <h3>Petition</h3>
+                    <p id="projects-p">
+                        An online petition built with Handlebars.js where supporters can register/login,
+                         add/update profile information, sign the petition, redo the petition and view a
+                          list of fellow signers sorted by location.
+
+                          The cause for this particular petition advocates bringing a sequel of the film the Big Lebowski back to the big screen.
+
+                          This project was built during the course "Full Stack Web Development" at SPICED Academy Berlin. I really enjoyed it since it gave me the opportunity to deepen my understanding of frontend-backend data flow.
+                        </p>
+
+                        <p id="technologies-red">Technologies: Handlebars.js, Node.js/Express.js, PostgreSQL, CSS Flexbox and Grid
+                         </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <div>
+            <!-- <div class="parallax">
+
+            </div> -->
+            <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/brutalism1.jpg"></div>
+
+        </div>
+
+
+        <section class="skills" id="skills-section">
+            <h1>Skills</h1>
+            <div class="skills-grid">
+                <div class="skills-grid-item programming">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h3>Programming</h3>
+                    <hr>
+                    <p>JavaScript/ES6, Node.js, HTML5, CSS3</p>
+                </div>
+                <div class="skills-grid-item frameworks">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h3>Frameworks / Tools</h3>
+                    <hr>
+                    <p>Express, React, Redux, Vue.js, jQuery, Handlebars</p>
+                </div>
+                <div class="skills-grid-item database">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h3>Database</h3>
+                    <hr>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="skills-grid-item testing">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h3>Testing</h3>
+                    <hr>
+                    <p>Jest</p>
+                </div>
+                <div class="skills-grid-item development">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h3>Development</h3>
+                    <hr>
+                    <p>Git, Github</p>
+                </div>
+                <div class="skills-grid-item cloudtech">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h3>Cloudtech</h3>
+                        <hr>
+                    <p>Heroku, AWS</p>
+                </div>
+
+
+            </div>
+
+        </section>
+        <div class="">
+            <!-- <div class="building-parallax"></div> -->
+            <div class="building-parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/building.jpg"></div>
+        </div>
+
+        <section class="contact" id="contact-section">
+            <article>
+                <h1>Contact</h1>
+
+                    <div id="icons">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/katja-stefan-890343187/" target="_blank">
+
+                                <i class="icon ion-logo-linkedin"></i>
+
+                            </a>
+                        </div>
+                        <div class="icon">
+
+                            <a href="https://github.com/alphabetakatja" target="_blank">
+
+                                <i class="icon ion-logo-github"></i>
+
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="mailto:katja.stefan18@gmail.com">
+
+                                <i class="icon ion-md-mail"></i>
+
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="images/KS_Resume.pdf" target="_blank">
+
+                                <i class="icon ion-md-document"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+        </section>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js-1.5.0/parallax.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
