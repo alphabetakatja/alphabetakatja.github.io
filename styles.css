@@ -59,7 +59,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 .nav-brand {
@@ -78,11 +77,9 @@ nav {
 
 .close i {
   color: #faf9f2;
-  /* color: #191818; */
 }
 
 .close i:hover {
-  /* color: #faf9f2; */
   color: #f2473e;
 }
 
@@ -90,8 +87,6 @@ nav {
   width: 25rem;
   height: 100vh;
   background: #191818;
-
-  /* background-color: #f2473e; */
   position: fixed;
   top: 0;
   right: -26rem;
@@ -145,18 +140,18 @@ nav {
 
 .about-parallax {
   height: 50rem;
+  background: transparent;
   /* background: url("images/ja1.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed; */
-  background: transparent;
 }
 
 .building-parallax {
   height: 50rem;
+  background: transparent;
   /* background: url("images/building.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed; */
-  background: transparent;
 }
 
 /* hero */
@@ -324,7 +319,7 @@ nav {
   margin-bottom: 10rem;
 }
 
-.social-network {
+.project-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -342,10 +337,11 @@ nav {
   color: #f2473e;
 }
 
+.projects-title h3,
 .projects-description h3 {
   font-size: 1.7rem;
-  padding: 0.5em;
-  margin: 0 10rem;
+  /* padding: 0.5em; */
+  /* margin: 0 10rem; */
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -407,11 +403,8 @@ nav {
 
 .skills-grid-item {
   height: 15rem;
-  /* padding: 5rem; */
-  /* margin-bottom: 10rem; */
   margin-left: 5rem;
   color: #191818;
-  /* color: #faf9f2; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -426,24 +419,20 @@ nav {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   margin: 2rem 0;
-  /* color: #f2473e; */
 }
 
 .skills-grid-item p {
   font-size: 1.2rem;
-  /* text-transform: uppercase; */
   letter-spacing: 0.5rem;
   margin: 2rem 0;
-  /* color: #f2473e; */
 }
 
 /* contact section */
 .contact {
   background: #191818;
   color: #f2473e;
-  position: relative;
+  /* position: relative; */
   width: 100%;
-  /* height: 20rem; */
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -463,16 +452,19 @@ article {
   width: 50%;
 }
 
-#icons {
+.icons {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon {
   color: #f2473e;
   font-size: 3rem;
   padding: 2.5rem;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 }
 
 .icon:hover {
@@ -483,19 +475,27 @@ article {
   color: #f2473e;
   font-size: 2.5rem;
   padding: 1rem;
-  /* padding: 2.5rem; */
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 350px) {
-  /* .main-message {
-    transform: translateY(40%);
-  } */
   .container {
     width: 100%;
-    /* max-width: 150rem; */
     margin: 0 auto;
-    /* padding: 0 1.5rem; */
+  }
+
+  .project-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .projects-title {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -548,6 +548,82 @@ article {
   .box h1 {
     font-size: 5em;
   }
+
+  /* projects section */
+  .projects {
+    background: #191818;
+    color: #faf9f2;
+    width: 100%;
+  }
+
+  .projects h2 {
+    color: #f2473e;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .project-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .projects-title {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-title a {
+    color: #f2473e;
+  }
+
+  .projects-description h3,
+  .projects-title h3 {
+    font-size: 1.7rem;
+    padding: 0.5em;
+    margin: 0 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 2rem 0;
+    color: #f2473e;
+  }
+
+  #projects-p {
+    font-size: 1.5em;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    padding: 0.5em;
+    margin: 0 10rem;
+    font-weight: 50;
+  }
+
+  #project-img {
+    padding: 2rem;
+  }
+
+  #technologies-red {
+    color: #f2473e;
+    font-size: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    padding: 0.5em;
+    margin: 0 10rem;
+    font-weight: 50;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -567,6 +643,11 @@ article {
     font-size: 7rem;
     color: #faf9f2;
     cursor: pointer;
+  }
+
+  .nav-link {
+    font-size: 2.7rem;
+    padding: 1rem;
   }
 
   .nav-list {
@@ -601,5 +682,10 @@ article {
   .projects {
     padding-left: 20rem;
     padding-right: 20rem;
+  }
+
+  .icons {
+    flex-direction: row;
+    justify-content: center;
   }
 }
