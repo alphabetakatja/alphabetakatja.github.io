@@ -265,9 +265,9 @@ nav {
   /* background: #faf9f2; */
   background: #fafafa;
   color: #191818;
-  width: 100%;
+  /* width: 100%; */
 }
-.about h1 {
+.about h2 {
   color: #f2473e;
   font-size: 3em;
   text-transform: uppercase;
@@ -314,7 +314,7 @@ nav {
   width: 100%;
 }
 
-.projects h1 {
+.projects h2 {
   color: #f2473e;
   font-size: 3em;
   text-transform: uppercase;
@@ -355,7 +355,7 @@ nav {
 
 #projects-p {
   font-size: 1.5em;
-  text-align: justify;
+  text-align: left;
   letter-spacing: 0.1rem;
   padding: 0.5em;
   margin: 0 10rem;
@@ -390,7 +390,7 @@ nav {
   width: 100%;
 }
 
-.skills h1 {
+.skills h2 {
   color: #f2473e;
   font-size: 3em;
   text-transform: uppercase;
@@ -449,7 +449,7 @@ nav {
   z-index: 100;
 }
 
-.contact h1 {
+.contact h2 {
   color: #f2473e;
   font-size: 3em;
   text-transform: uppercase;
@@ -486,18 +486,16 @@ article {
   /* padding: 2.5rem; */
 }
 
-/* footer p {
-  background: #191818;
-  color: #faf9f2;
-  text-align: right;
-  padding-right: 2rem;
-  padding-bottom: 0.8rem;
-} */
-
 /* MEDIA QUERIES */
 @media screen and (min-width: 350px) {
-  .main-message {
+  /* .main-message {
     transform: translateY(40%);
+  } */
+  .container {
+    width: 100%;
+    /* max-width: 150rem; */
+    margin: 0 auto;
+    /* padding: 0 1.5rem; */
   }
 }
 
@@ -525,7 +523,6 @@ article {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   }
 
   .menu-icons i {
@@ -550,5 +547,59 @@ article {
 
   .box h1 {
     font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .container {
+    width: 100%;
+    max-width: 200rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  nav {
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
+  .menu-icons i {
+    font-size: 7rem;
+    color: #faf9f2;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    width: 40rem;
+    right: -41rem;
+  }
+
+  .box {
+    width: 40em;
+    height: 40em;
+  }
+  .box:before {
+    border-top: 1.3rem solid #fafafa;
+    border-bottom: 1.3rem solid #fafafa;
+  }
+
+  .box:after {
+    border-right: 1.3rem solid #fafafa;
+    border-left: 1.3rem solid #fafafa;
+  }
+
+  .box h1 {
+    font-size: 7em;
+  }
+
+  .personal-info {
+    padding-left: 20rem;
+    padding-right: 20rem;
+    /* align-items: center; */
+  }
+
+  .projects {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
