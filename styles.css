@@ -125,14 +125,6 @@ nav {
   color: #f2473e;
 }
 
-/* all parallax images */
-
-/* .parallax {
-  background: url("images/brutalism1.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 50rem;
-} */
 .parallax {
   min-height: 50rem;
   background: transparent;
@@ -141,17 +133,11 @@ nav {
 .about-parallax {
   height: 50rem;
   background: transparent;
-  /* background: url("images/ja1.jpg") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed; */
 }
 
 .building-parallax {
   height: 50rem;
   background: transparent;
-  /* background: url("images/building.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed; */
 }
 
 /* hero */
@@ -266,18 +252,17 @@ nav {
   color: #f2473e;
   font-size: 3em;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 1.7rem;
   text-align: center;
-  margin-bottom: 10rem;
-  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 #about-p {
   font-size: 2em;
-  text-align: justify;
   letter-spacing: 0.1rem;
-  padding: 0.5em;
-  margin: 0 10rem;
+  /* padding: 0.5em; */
+  margin: 1rem 2rem;
   font-weight: 50;
 }
 
@@ -290,11 +275,14 @@ nav {
   font-size: 2em;
   text-align: justify;
   letter-spacing: 0.3rem;
-  padding-top: 1em;
-  margin: 0 10rem;
+  /* padding-top: 1em; */
+  margin: 0 2rem;
+  margin-top: 2rem;
   font-weight: 600;
   color: #f2473e;
 }
+
+/* */
 
 .personal-info {
   display: flex;
@@ -310,20 +298,21 @@ nav {
 }
 
 .projects h2 {
-  color: #f2473e;
+  /* color: #f2473e; */
+  color: #faf9f2;
   font-size: 3em;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 1.5rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 2em;
 }
 
 .project-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .projects-title {
@@ -339,28 +328,25 @@ nav {
 
 .projects-title h3,
 .projects-description h3 {
-  font-size: 1.7rem;
-  /* padding: 0.5em; */
-  /* margin: 0 10rem; */
+  font-size: 2.7rem;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  margin: 2rem 0;
+  letter-spacing: 0.7rem;
+  margin-bottom: 1em;
   color: #f2473e;
 }
 
 #projects-p {
-  font-size: 1.5em;
-  text-align: left;
+  font-size: 2em;
   letter-spacing: 0.1rem;
   padding: 0.5em;
-  margin: 0 10rem;
-  font-weight: 50;
+  font-weight: 20;
+  margin: 0 2rem;
+  margin-top: 2rem;
+  color: #faf9f2;
 }
 
 #project-img {
-  /* width: 50%;
-  height: 50%; */
   padding: 2rem;
 }
 
@@ -371,11 +357,10 @@ nav {
 
 #technologies-red {
   color: #f2473e;
-  font-size: 1.5em;
-  text-align: justify;
+  font-size: 2em;
   letter-spacing: 0.1rem;
   padding: 0.5em;
-  margin: 0 10rem;
+  margin: 0 2rem;
   font-weight: 50;
 }
 
@@ -390,10 +375,10 @@ nav {
   color: #f2473e;
   font-size: 3em;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 2rem;
   text-align: center;
-  margin-bottom: 10rem;
-  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 .skills-grid {
@@ -444,7 +429,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 article {
@@ -460,7 +445,7 @@ article {
 
 .icon {
   color: #f2473e;
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 2.5rem;
   flex-direction: column;
   align-self: center;
@@ -549,6 +534,48 @@ article {
     font-size: 5em;
   }
 
+  /* about section */
+
+  .about {
+    /* background: #faf9f2; */
+    background: #fafafa;
+    color: #191818;
+    /* width: 100%; */
+  }
+  .about h2 {
+    color: #f2473e;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+  }
+
+  #about-p {
+    font-size: 2em;
+    /* text-align: left; */
+    letter-spacing: 0.1rem;
+    padding: 0.5em;
+    margin: 0 10rem;
+    font-weight: 50;
+  }
+
+  #about-p a {
+    text-decoration: none;
+    color: #f2473e;
+  }
+
+  #about-portfolio {
+    font-size: 2em;
+    text-align: justify;
+    letter-spacing: 0.3rem;
+    padding-top: 1em;
+    margin: 0 10rem;
+    font-weight: 600;
+    color: #f2473e;
+  }
+
   /* projects section */
   .projects {
     background: #191818;
@@ -586,7 +613,7 @@ article {
 
   .projects-description h3,
   .projects-title h3 {
-    font-size: 1.7rem;
+    font-size: 2.5em;
     padding: 0.5em;
     margin: 0 10rem;
     text-align: center;
@@ -597,26 +624,79 @@ article {
   }
 
   #projects-p {
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: left;
     letter-spacing: 0.1rem;
     padding: 0.5em;
-    margin: 0 10rem;
+    margin: 0 7rem;
     font-weight: 50;
   }
 
   #project-img {
-    padding: 2rem;
+    padding: 3rem;
+  }
+
+  #project-img-lebowski {
+    width: 80%;
+    height: 80%;
   }
 
   #technologies-red {
     color: #f2473e;
     font-size: 1.5em;
-    text-align: justify;
+    /* text-align: justify; */
     letter-spacing: 0.1rem;
     padding: 0.5em;
-    margin: 0 10rem;
+    margin: 0 7rem;
     font-weight: 50;
+  }
+
+  /* skills section */
+  .skills {
+    background: #fafafa;
+    color: #191818;
+    width: 100%;
+  }
+
+  .skills h2 {
+    color: #f2473e;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    justify-content: center;
+  }
+
+  .skills-grid-item {
+    height: 15rem;
+    margin-left: 5rem;
+    color: #191818;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .skills-grid-item h3 {
+    position: relative;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .skills-grid-item p {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    margin: 2rem 0;
   }
 
   .icons {
